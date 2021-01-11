@@ -8,14 +8,13 @@ using namespace pxt;
 namespace UBIT_VERSION {
 
     bool initialized = false;
-    int value;
+    int value = 0;
     
     //%
     int init() {
-        if (initialized) {
-            value = 0;
-            return value;
-        }
+        //if (initialized) {
+        //    return value;
+        //}
 
         #if MICROBIT_CODAL
             value = 2;
