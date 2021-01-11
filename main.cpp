@@ -11,7 +11,7 @@ namespace UBIT_VERSION {
     int value;
     
     //%
-    void init() {
+    int init() {
         if (initialized) {
             value = 0;
             return value;
