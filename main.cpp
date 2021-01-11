@@ -8,13 +8,20 @@ using namespace pxt;
 namespace UBIT_VERSION {
 
     bool initialized = false;
-
+    int value;
+    
     //%
     void init() {
-        if (initialized) return;
+        if (initialized) {
+            value = 0;
+            return value;
+        }
 
-        #if !MICROBIT_CODAL
-                return board.hardwareVersion;
+        #if MICROBIT_CODAL
+            value = 2;
+        #else
+            value = 1;
         #endif
+        return value;
     }
 }

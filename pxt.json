@@ -4,13 +4,14 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "radio": "*"
     },
     "files": [
         "README.md",
         "main.ts",
-        "main.cpp.ts"
+        "shims.d.ts",
+        "enums.d.ts",
+        "main.cpp"
     ],
     "testFiles": [
         "test.ts"
